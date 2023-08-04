@@ -1068,7 +1068,7 @@ input:checked+.modal-cnopka span {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\media\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/*! \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\media\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 129dpi),
@@ -1080,8 +1080,8 @@ url(../images/Dark-mobile2X.jpg);
 }
 }
 
-
 @media screen and (min-width: 768px) {
+
   .hero-container {
     padding: 112px 136px;
   }
@@ -1093,7 +1093,6 @@ url(../images/Dark-mobile2X.jpg);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
   url(../images/Dark-bgtablet.jpg);
-
 background-color: var(--hero-background);
   }
 
@@ -1105,6 +1104,7 @@ background-color: var(--hero-background);
   rgba(46, 47, 66, 0.7)),
 url(../images/Dark-tablet2X.jpg);
 }
+
 }
 
   .hero-title {
@@ -1112,12 +1112,8 @@ url(../images/Dark-tablet2X.jpg);
     line-height: 1.07;
     /* 60/56 */
     margin-bottom: 36px;
-
   }
-
 }
-
-
 
 @media screen and (min-width: 1200px) {
 
@@ -1130,7 +1126,6 @@ url(../images/Dark-tablet2X.jpg);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
   url(../images/people-office.jpg);
-
 background-color: var(--hero-background);
   }
 
@@ -1267,7 +1262,7 @@ background-color: var(--hero-background);
   }
 }
 
-/* ! Poptfolio*/
+/* ! ----------------------------------Poptfolio*/
 
 @media screen and (min-width: 428px) {
   .nav-button {
