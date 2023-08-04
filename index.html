@@ -18,55 +18,129 @@
 </head>
 
 <body>
-    <!-- <header class="header">
-      <div class="header-container container">
-        <nav class="nav-menu">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo-accent">Studio</span></a
-          >
+    <header class="header">
+        <div class="header-container container">
+            <nav class="nav-menu">
 
-          <ul class="nav-menu-list list">
-            <li>
-              <a class="nav-item link current" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="nav-item link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li><a class="nav-item link" href="">Contacts</a></li>
-          </ul>
-        </nav>
+                <a class="logo link" href="./index.html">Web<span class="logo-accent">Studio</span></a>
 
-        <address class="informacion">
-          <ul class="contact list">
-            <li>
-              <a class="contact link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contact link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header> -->
+                <ul class="nav-menu-list list">
+                    <li>
+                        <a class="nav-item link current" href="./index.html">Studio</a>
+                    </li>
+                    <li>
+                        <a class="nav-item link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li><a class="nav-item link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <address class="informacion">
+                <ul class="contact list">
+                    <li>
+                        <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+
+
+        <!-- mob-menu -->
+        <button type="button-hamburger" class="menu-open-btn">
+            <svg class="mobail-menu" width="32" height="22">
+                <use href="./images/icons.svg#icon-menu-hamburger">
+                </use>
+            </svg>
+        </button>
+
+        <div class="mob-menu">
+            <button type="button" class="menu-close-btn" data-modal-close>
+                <svg class="close" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+
+            <ul class="mob-menu-list list">
+                <li>
+                    <a class="mob-item-link link" href="./index.html">Studio</a>
+                </li>
+                <li>
+                    <a class="mob-item-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li><a class="mob-item-link link" href="">Contacts</a></li>
+            </ul>
+
+            <div>
+                <address class="mob-informacion">
+                    <ul class="mob-contact-list list">
+                        <li>
+                            <a class="mob-contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li>
+                            <a class="mob-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+
+                    </ul>
+                </address>
+
+                <ul class="mob-social-list link">
+                    <li class="mob-item">
+                        <a class="mob-social-link link" href="" aria-label="instagram" target="_blank"
+                            rel="noopener horeferrer">
+                            <svg class="mob-social" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="mob-item">
+                        <a class="mob-social-link link" href="" aria-label="twitter" target="_blank"
+                            rel="noopener horeferrer">
+                            <svg class="mob-social" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="mob-item">
+                        <a class="mob-social-link link" href="" aria-label="facebook" target="_blank"
+                            rel="noopener horeferrer">
+                            <svg class="mob-social" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-item">
+                        <a class="mob-social-link link" href="" aria-label="linkedin" target="_blank"
+                            rel="noopener horeferrer">
+                            <svg class="mob-social" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
 
     <main>
         <!-- секция 1 -->
         <section class="hero-section">
-        <div class="hero-container container">
-          <h1 class="hero-title">
-            Effective Solutions<br />
-            for Your Business
-          </h1>
+            <div class="hero-container container">
+                <h1 class="hero-title">
+                    Effective Solutions<br />
+                    for Your Business
+                </h1>
 
-          <button type="button" class="hero-button" data-modal-open>
-            Order Service
-          </button>
-        </div>
-      </section>
+                <button type="button" class="hero-button" data-modal-open>
+                    Order Service
+                </button>
+            </div>
+        </section>
 
         <!-- секция 2 -->
         <section class="section">
@@ -130,29 +204,25 @@
         </section>
 
         <!-- секция 3 -->
-       <section class="what ">
+        <section class="what ">
             <div class="what-container container">
                 <h2 class="what-title">What are we doing</h2>
 
                 <ul class="what-list list">
                     <li class="what-img">
-                        <img 
-                        srcset="./images/Rectangle71-1x.jpg 1x,
+                        <img srcset="./images/Rectangle71-1x.jpg 1x,
                         ./images/Rectangle71-2x.jpg 2x
-                        "
-                        src="./images/Rectangle71.jpg" alt="Rectangle71" width="360" />
+                        " src="./images/Rectangle71.jpg" alt="Rectangle71" width="360" />
                     </li>
                     <li class="what-img">
-                        <img 
-                        srcset="./images/Rectangle71(1)-1x.jpg 1x,
-                        ./images/Rectangle71(1)-2x.jpg 2x"
-                        src="./images/Rectangle71(1).jpg" alt="Rectangle71(1)" width="360" />
+                        <img srcset="./images/Rectangle71(1)-1x.jpg 1x,
+                        ./images/Rectangle71(1)-2x.jpg 2x" src="./images/Rectangle71(1).jpg" alt="Rectangle71(1)"
+                            width="360" />
                     </li>
                     <li class="what-img">
-                        <img 
-                        srcset="./images/Rectangle71(2)-1x.jpg 1x,
-                        ./images/Rectangle71(2)-2x.jpg 2x"
-                        src="./images/Rectangle71(2).jpg" alt="Rectangle71(2)" width="360" />
+                        <img srcset="./images/Rectangle71(2)-1x.jpg 1x,
+                        ./images/Rectangle71(2)-2x.jpg 2x" src="./images/Rectangle71(2).jpg" alt="Rectangle71(2)"
+                            width="360" />
                     </li>
                 </ul>
             </div>
@@ -165,11 +235,9 @@
 
                 <ul class="team list">
                     <li class="team-item">
-                        <img 
-                        srcset="./images/img1x-min.jpg 1x,
+                        <img srcset="./images/img1x-min.jpg 1x,
                         ./images/img2x-min.jpg 2x
-                        "
-                        src="./images/img.jpg" alt="Mark Guerrero" width="264" class="team-image" />
+                        " src="./images/img.jpg" alt="Mark Guerrero" width="264" class="team-image" />
 
                         <div class="team-subt">
                             <h3 class="team-name">Mark Guerrero</h3>
@@ -215,11 +283,9 @@
                     </li>
 
                     <li class="team-item">
-                        <img 
-                        srcset="./images/imgg2-1x.jpg 1x,
-                        ./images/imgg2-2x.jpg 2x"
-                       
-                        src="./images/imgg2.jpg" alt="Tom Ford" width="264" class="team-image" />
+                        <img srcset="./images/imgg2-1x.jpg 1x,
+                        ./images/imgg2-2x.jpg 2x" src="./images/imgg2.jpg" alt="Tom Ford" width="264"
+                            class="team-image" />
                         <div class="team-subt">
                             <h3 class="team-name">Tom Ford</h3>
                             <p class="team-role">Frontend Developer</p>
@@ -263,11 +329,9 @@
                     </li>
 
                     <li class="team-item">
-                        <img 
-                        srcset="./images/img2-1x.jpg 1x,
-                        ./images/img2-2x.jpg 2x"
-
-                        src="./images/img2.jpg" alt="Camila Garcia" width="264" class="team-image" />
+                        <img srcset="./images/img2-1x.jpg 1x,
+                        ./images/img2-2x.jpg 2x" src="./images/img2.jpg" alt="Camila Garcia" width="264"
+                            class="team-image" />
                         <div class="team-subt">
                             <h3 class="team-name">Camila Garcia</h3>
                             <p class="team-role">Marketing</p>
@@ -311,11 +375,9 @@
                     </li>
 
                     <li class="team-item">
-                        <img 
-                        srcset="./images/img3-1x.jpg 1x,
-                        ./images/img3-2x.jpg 2x"
-                        
-                        src="./images/img3.jpg" alt="Daniel Wilson" width="264" class="team-image" />
+                        <img srcset="./images/img3-1x.jpg 1x,
+                        ./images/img3-2x.jpg 2x" src="./images/img3.jpg" alt="Daniel Wilson" width="264"
+                            class="team-image" />
                         <div class="team-subt">
                             <h3 class="team-name">Daniel Wilson</h3>
                             <p class="team-role">UI Designer</p>
@@ -504,7 +566,7 @@
           </form>
         </div>
       </div>
-    </footer> --> 
+    </footer> -->
 
     <!-- модальное окно -->
 
