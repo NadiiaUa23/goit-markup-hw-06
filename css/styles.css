@@ -977,6 +977,13 @@ text-transform: capitalize;
   padding: 72px 24px 24px 24px;
 }
 
+ @media screen and (max-width: 767px) {
+ .modal {
+  width: 392px;
+} 
+ }
+
+
 .backdrop .is-hidden .modal {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
