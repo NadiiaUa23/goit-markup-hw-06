@@ -115,6 +115,7 @@ header {
 .header-container {
   display: flex;
   align-items: center;
+
 }
 
 .nav-menu {
@@ -154,8 +155,22 @@ header {
 
 /*button-hamburger */
 .menu-open-btn {
-  
+  display: block;
+
+  position: absolute;
+  border: none;
+  background: transparent;
+  height: 22px;
+  width: 32px;
+  top: 24px;
+  right: 24px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
 }
+
 .mobail-menu {
 }
 
@@ -221,7 +236,11 @@ justify-content: space-between;
 .close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
 .mob-menu-list{
 display: inline-flex;
 flex-direction: column;
@@ -1193,8 +1212,63 @@ input:checked+.modal-cnopka span {
 /*! \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\media\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* heder */
 @media screen and (min-width: 768px){
+  .nav-menu-list {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-item {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 24px 0;
+    display: block;
+  }
+  
+  .current {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #404bbf;
+  }
+  
+  .current::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--ocean, #404bbf);
+  }
+  
+  .informacion {
+    margin-left: auto;
+  }
+  .contact {
+    color: var(--text);
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    /* 24/16 */
+    letter-spacing: 0.02em;
+    /* 0.32/16 */
+   display: block;
+    gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .link:hover,
+  .link:focus {
+    color: var(--pressed-state);
+  }
+  }
 
-}
 
 @media screen and (min-width: 1200px){
  
@@ -1236,16 +1310,15 @@ input:checked+.modal-cnopka span {
   margin-left: auto;
 }
 .contact {
+  display: flex;
+  align-items: center;
   color: var(--text);
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  /* 24/16 */
   letter-spacing: 0.02em;
-  /* 0.32/16 */
-  display: flex;
   gap: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
