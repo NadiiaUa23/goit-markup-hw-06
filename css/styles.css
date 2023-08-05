@@ -176,20 +176,58 @@ flex-direction: column;
 justify-content: space-between;
 
 }
+
+
 .menu-close-btn {
   display: block;
   margin-left: auto;
   margin-bottom: 32px;
+
+  position: absolute;
+  border: none;
+  background: transparent;
+  height: 24px;
+  width: 24px;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .close {
+}
+
+.menu-close-btn:hover {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.menu-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu-list{
 display: inline-flex;
 flex-direction: column;
 align-items: flex-start;
-/* margin-left: 40px; */
-/* margin-bottom: 204px; */
+margin-top: 80px;
+margin-bottom: 100px;
 }
 
 .mob-menu-list:not(:last-child) {
@@ -247,6 +285,7 @@ text-transform: capitalize;
   display: flex;
   align-self: flex-start;
  gap: 56px;
+ margin-top: auto;
 }
 
 
@@ -282,6 +321,7 @@ text-transform: capitalize;
 }
 
 .mob-social {
+
 }
 
 
@@ -427,6 +467,10 @@ text-transform: capitalize;
   overflow: hidden;
 }
 
+
+.no-scroll{
+  overflow: hidden;
+}
 /*__////////////////////////////////////////секция 3////////////////////////////////////////__*/
 .what {
   background: #fff;

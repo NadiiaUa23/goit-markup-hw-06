@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
     <title>WebStudio</title>
-
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -49,31 +49,33 @@
 
 
         <!-- mob-menu -->
-        <button type="button-hamburger" class="menu-open-btn">
+        <button type="button-hamburger" class="menu-open-btn" data-menu-open>
             <svg class="mobail-menu" width="32" height="22">
                 <use href="./images/icons.svg#icon-menu-hamburger">
                 </use>
             </svg>
         </button>
 
-        <div class="mob-menu">
-            <button type="button" class="menu-close-btn" data-modal-close>
-                <svg class="close" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-
-            <ul class="mob-menu-list list">
-                <li>
-                    <a class="mob-item-link link" href="./index.html">Studio</a>
-                </li>
-                <li>
-                    <a class="mob-item-link link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li><a class="mob-item-link link" href="">Contacts</a></li>
-            </ul>
-
+        <div class="mob-menu is-hidden" data-menu>
             <div>
+                <button type="button" class="menu-close-btn" data-menu-close>
+                    <svg class="close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <ul class="mob-menu-list list">
+                    <li>
+                        <a class="mob-item-link link" href="./index.html">Studio</a>
+                    </li>
+                    <li>
+                        <a class="mob-item-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li><a class="mob-item-link link" href="">Contacts</a></li>
+                </ul>
+
+         
+       
                 <address class="mob-informacion">
                     <ul class="mob-contact-list list">
                         <li>
@@ -85,44 +87,44 @@
 
                     </ul>
                 </address>
-
-                <ul class="mob-social-list link">
-                    <li class="mob-item">
-                        <a class="mob-social-link link" href="" aria-label="instagram" target="_blank"
-                            rel="noopener horeferrer">
-                            <svg class="mob-social" width="16" height="16">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="mob-item">
-                        <a class="mob-social-link link" href="" aria-label="twitter" target="_blank"
-                            rel="noopener horeferrer">
-                            <svg class="mob-social" width="16" height="16">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="mob-item">
-                        <a class="mob-social-link link" href="" aria-label="facebook" target="_blank"
-                            rel="noopener horeferrer">
-                            <svg class="mob-social" width="16" height="16">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mob-item">
-                        <a class="mob-social-link link" href="" aria-label="linkedin" target="_blank"
-                            rel="noopener horeferrer">
-                            <svg class="mob-social" width="16" height="16">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
             </div>
+            <ul class="mob-social-list link">
+                <li class="mob-item">
+                    <a class="mob-social-link link" href="" aria-label="instagram" target="_blank"
+                        rel="noopener horeferrer">
+                        <svg class="mob-social" width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="mob-item">
+                    <a class="mob-social-link link" href="" aria-label="twitter" target="_blank"
+                        rel="noopener horeferrer">
+                        <svg class="mob-social" width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="mob-item">
+                    <a class="mob-social-link link" href="" aria-label="facebook" target="_blank"
+                        rel="noopener horeferrer">
+                        <svg class="mob-social" width="16" height="16">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-item">
+                    <a class="mob-social-link link" href="" aria-label="linkedin" target="_blank"
+                        rel="noopener horeferrer">
+                        <svg class="mob-social" width="16" height="16">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+       
         </div>
 
     </header>
@@ -641,6 +643,7 @@
         </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
