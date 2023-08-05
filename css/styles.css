@@ -353,7 +353,7 @@ text-transform: capitalize;
   
   background-color: var(--hero-background);
   
-  width: 428px;
+  width: 100%;
   height: 432px;
   flex-shrink: 0;
   background-size: cover;
@@ -649,9 +649,11 @@ text-transform: capitalize;
 }
 
 .ftr-container {
-  display: flex;
-  align-items: baseline;
+  /* display: flex; */
+ padding: 96px 15px;
+ height: 428px;
 }
+
 
 .logopftr {
   margin-right: 120px;
@@ -756,7 +758,7 @@ text-transform: capitalize;
 }
 
 .footer-form {
-  display: flex;
+
   gap: 24px;
 }
 
@@ -811,6 +813,15 @@ text-transform: capitalize;
   fill: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .ftr-container{
+    display: flex;
+     align-items: baseline;
+  }
+  .footer-form {
+    display: flex;
+  }
+}
 
 
 /* !_____////////////Poptfolio///////////////________ */
