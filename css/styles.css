@@ -644,21 +644,24 @@ text-transform: capitalize;
 .ftr {
   background-color: #2e2f42;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 96px 15px;
   display: flex;
 }
 
 .ftr-container {
-  /* display: flex; */
- padding: 96px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
  height: 428px;
 }
 
 
 .logopftr {
-  margin-right: 120px;
-}
 
+  margin-bottom: 72px;
+}
+  
 .logo-down {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -671,6 +674,7 @@ text-transform: capitalize;
   display: inline-block;
   margin-bottom: 16px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .logo-down-accent {
@@ -693,11 +697,10 @@ text-transform: capitalize;
   width: 264px;
 }
 
-.ftr-icon {
-  margin-right: 80px;
-}
+
 
 .ftr-text-social {
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -712,7 +715,9 @@ text-transform: capitalize;
 .ftr-icon-list {
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+
+  margin-bottom: 72px;
+  justify-content: center;
 }
 
 .ftr-icon-item {
@@ -745,10 +750,10 @@ text-transform: capitalize;
 }
 
 /* /* forma email  */
-.footer-bottom {}
+
 
 .footer-name {
-  display: flex;
+
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -765,7 +770,8 @@ text-transform: capitalize;
 .footer-form-email {}
 
 .footer-input {
-  width: 264px;
+ 
+  width: 398px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -795,6 +801,8 @@ text-transform: capitalize;
   background: var(--iris, #4d5ae5);
   border-radius: 4px;
   border: none;
+  margin-left: 131px;
+  margin-top: 16px;
 }
 
 .footer-form-btn:hover {
@@ -813,14 +821,72 @@ text-transform: capitalize;
   fill: #ffffff;
 }
 
+
+
+@media screen and (min-width: 768px){
+
+  .ftr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 428px;
+  }
+
+  .inf-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+    
+  }
+
+  .footer-name{
+    display: flex;
+    }
+    
+    .footer-input {
+      width: 264px;
+    }
+
+    .footer-form-btn {
+    margin-left: 0;
+    margin-top: 0
+    ;}
+}
+
 @media screen and (min-width: 1200px) {
+
+.ftr {
+  padding: 100px 0;
+}
+
   .ftr-container{
     display: flex;
      align-items: baseline;
   }
+
   .footer-form {
     display: flex;
   }
+  .logopftr{
+  margin-right: 120px;
+}
+
+.ftr-icon {
+  margin-right: 80px;
+}
+
+.footer-name{
+display: flex;
+}
+
+.footer-input {
+  width: 264px;
+}
 }
 
 
