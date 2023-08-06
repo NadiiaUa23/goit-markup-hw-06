@@ -789,6 +789,7 @@ header {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin-bottom: 16px;
 }
 
 .footer-form-btn {
@@ -807,8 +808,7 @@ header {
   background: var(--iris, #4d5ae5);
   border-radius: 4px;
   border: none;
-  margin-left: 131px;
-  margin-top: 16px;
+  margin: 0 auto;
 }
 
 .footer-form-btn:hover {
@@ -861,7 +861,10 @@ header {
     display: flex;
   }
 
-  .footer-bottom {}
+  .footer-bottom {
+
+
+  }
 
   .footer-input {
     width: 264px;
