@@ -459,6 +459,12 @@ header {
   background-color: #f4f4fd;
 }
 
+
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+
 .team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -1285,10 +1291,11 @@ input:checked+.modal-cnopka span {
     flex-wrap: wrap;
     justify-content: center;
     gap: 64px 24px;
+    margin: 0;
   }
 
   .team-item:not(:last-child) {
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
 
   .cust-item {
