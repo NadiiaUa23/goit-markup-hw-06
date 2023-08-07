@@ -753,7 +753,7 @@ header {
 
 .nav-button {
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   display: flex;
   gap: 24px;
   margin-bottom: 48px;
@@ -1169,7 +1169,7 @@ input:checked+.modal-cnopka span {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/Dark-mobile2X.jpg);
+      url(../images/dark-mobile2X.jpg);
   }
 }
 
@@ -1256,7 +1256,7 @@ input:checked+.modal-cnopka span {
     flex-shrink: 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/Dark-bgtablet.jpg);
+      url(../images/dark-bgtablet.jpg);
     background-color: var(--hero-background);
   }
 
@@ -1266,7 +1266,7 @@ input:checked+.modal-cnopka span {
     .hero-section {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
-        url(../images/Dark-tablet2X.jpg);
+        url(../images/dark-tablet2X.jpg);
     }
   }
 
@@ -1316,7 +1316,6 @@ input:checked+.modal-cnopka span {
   }
 
   /* футер */
-
   .ftr-container {
     display: flex;
     flex-direction: column;
@@ -1368,7 +1367,6 @@ input:checked+.modal-cnopka span {
     width: 392px;
   }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cust-container {
