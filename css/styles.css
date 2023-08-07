@@ -64,7 +64,7 @@ img {
 
 .container {
   width: 100%;
-  /* padding: 0 16px; */
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -90,12 +90,13 @@ header {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  /* padding: 24px 16px; */
+  
 }
 
 .logo {
@@ -150,7 +151,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: 2;
-  padding: 20px 20px 40px;
+  padding: 20px 35px 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -198,7 +199,7 @@ header {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 80px;
+  margin-top: 32px;
   margin-bottom: 100px;
 }
 
@@ -237,6 +238,7 @@ header {
   font-weight: 500;
   line-height: 1.20;
   letter-spacing: 0.02em;
+  transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-contact:hover,
@@ -253,7 +255,7 @@ header {
 
 .mob-social-list {
   display: flex;
-  align-self: flex-start;
+ 
   gap: 56px;
   margin-top: auto;
 }
@@ -288,6 +290,22 @@ header {
   background-color: #404bbf;
   border: transparent;
 }
+.current {
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--ocean, #404bbf);
+}
 
 /*?__///////////////_Body_////////////////////////////////////////////////////__ */
 /* -/////////////////////секция 1//////////////////////---------- */
@@ -297,7 +315,7 @@ header {
     url(../images/dark-moble.jpg);
   background-color: var(--hero-background);
   width: 100%;
-  height: 432px; 
+
   flex-shrink: 0;
   background-size: cover;
   background-position: center;
@@ -378,7 +396,7 @@ header {
 }
 
 .feature-item {
-  /* margin-bottom: 72px; */
+ 
 }
 
 .feature-cub {
@@ -751,7 +769,7 @@ header {
 
 .nav-button {
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
   display: flex;
   gap: 24px;
   margin-bottom: 48px;
@@ -1139,13 +1157,21 @@ input:checked+.modal-cnopka span {
 }
 
 /* ! -----------------media ---------------------------------------*/
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
 
-@media screen and (max-width: 767px) {
-  .nav-menu {
-    padding: 24px 16px;
+  .nav-button {
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   
-  
+}
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    padding: 24px 16px;}
+    
   .feature-subtitle {
     text-align: center;
   }
@@ -1155,17 +1181,7 @@ input:checked+.modal-cnopka span {
   }
 }
 
-@media screen and (min-width: 428px) {
-  .container {
-    width: 428px;
-      padding: 0 16px;
-  }
 
-  .nav-button {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-}
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 129dpi),
@@ -1173,7 +1189,7 @@ input:checked+.modal-cnopka span {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/dark-mobile2X.jpg);
+      url(../images/Dark-mobile2X.jpg);
   }
 }
 
@@ -1185,13 +1201,10 @@ input:checked+.modal-cnopka span {
 
   /* хедер */
 
-  .header-container {
-    
-  }
-
   .nav-menu-list {
     display: flex;
     gap: 40px;
+    padding: 0;
   }
 
   .nav-item {
@@ -1251,16 +1264,16 @@ input:checked+.modal-cnopka span {
   /* хиро */
 
   .hero-container {
-    /* padding: 112px 136px; */
+    padding: 112px 136px;
   }
 
   .hero-section {
-    width: 100%;
+  
     height: 436px;
     flex-shrink: 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/dark-bgtablet.jpg);
+      url(../images/Dark-bgtablet.jpg);
     background-color: var(--hero-background);
   }
 
@@ -1270,7 +1283,7 @@ input:checked+.modal-cnopka span {
     .hero-section {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
-        url(../images/dark-tablet2X.jpg);
+        url(../images/Dark-tablet2X.jpg);
     }
   }
 
@@ -1283,7 +1296,7 @@ input:checked+.modal-cnopka span {
   .solutions-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .feature-item {
@@ -1320,11 +1333,11 @@ input:checked+.modal-cnopka span {
   }
 
   /* футер */
+
   .ftr-container {
-    display: flex;
-    flex-direction: column;
-    padding: 96px 0;
-    height: 456px;
+    /* display: flex;
+    flex-direction: column; */
+   
   }
 
   .inf-media {
@@ -1372,19 +1385,25 @@ input:checked+.modal-cnopka span {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .cust-container {
     width: 584px;
   }
 }
 
-@media screen (max-width 1023px) {
+@media screen (max-width 1157px) {
+ 
+
   .what-container {
     display: none;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1157px) {
+
+ 
+
   .what {
     display: none;
   }
@@ -1397,10 +1416,13 @@ input:checked+.modal-cnopka span {
 
   .container {
     width: 1158px;
-   
   }
 
   /* хедер */
+
+  /* .hero-container{
+    padding: 188px 0;
+  } */
 
   .nav-menu-list {
     display: flex;
@@ -1462,7 +1484,6 @@ input:checked+.modal-cnopka span {
 
   .hero-section {
     max-width: 1440px;
-    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1492,7 +1513,7 @@ input:checked+.modal-cnopka span {
 
   .solutions-list {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-wrap: nowrap;
   }
 
@@ -1510,7 +1531,7 @@ input:checked+.modal-cnopka span {
     display: flex;
     font-size: 20px;
     font-weight: 500;
-    justify-content: flex-start
+    justify-content: flex-start;
   }
 
   .feature-text {
@@ -1557,10 +1578,9 @@ input:checked+.modal-cnopka span {
 
   .ftr-container {
     margin: 0 auto;
-    padding: 100px 0;
+    /* padding: 100px 0; */
     display: flex;
     flex-wrap: wrap;
-    height: 312px;
   }
 
   .logopftr {
@@ -1569,7 +1589,7 @@ input:checked+.modal-cnopka span {
 
   .ftr-text {
     display: flex;
-    width: 264px;
+    
   }
 
   .footer-bottom {
