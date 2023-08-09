@@ -335,9 +335,7 @@ header {
   margin: 0 auto;
 }
 
-.hero-container {
-  padding: 112px 54px;
-}
+
 
 .hero-title {
   font-size: 36px;
@@ -620,7 +618,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 428px;
+  /* height: 428px; */
 }
 
 .logopftr {
@@ -1173,6 +1171,7 @@ input:checked+.modal-cnopka span {
     width: 428px;
   }
 
+  
   .nav-button {
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1182,8 +1181,14 @@ input:checked+.modal-cnopka span {
  /* Here go the mobile phone CSS */
 @media screen and (max-width: 767px) { 
   .nav-menu {
-    padding: 24px 16px;}
+    padding: 24px 16px;
+  }
     
+
+    .hero-container {
+      padding: 112px 0;
+     }
+   
    .team        {
     width: 264px;
     margin: auto;
@@ -1253,10 +1258,10 @@ input:checked+.modal-cnopka span {
 
   .container {
     width: 584px;
+    padding: 0;
   }
 
-  /* хедер */
-
+ /* хедер * */
   .nav-menu-list {
     display: flex;
     gap: 40px;
@@ -1319,13 +1324,9 @@ input:checked+.modal-cnopka span {
 
   /* хиро */
 
-  .hero-container {
-    padding: 112px 136px;
-  }
 
   .hero-section {
-  
-    height: 436px;
+  padding: 118px 0;
     flex-shrink: 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -1392,14 +1393,9 @@ input:checked+.modal-cnopka span {
   /* футер */
 
   .ftr-container {
-    /* display: flex;
-    flex-direction: column; */
-    
     align-items: initial;
   }
    
-  
-
   .inf-media {
     display: flex;
     flex-wrap: wrap;
@@ -1407,8 +1403,7 @@ input:checked+.modal-cnopka span {
   }
 
   .logopftr {
-    /* text-align: start; */
-
+    text-align: start;
   }
 
   .footer-form {
@@ -1418,18 +1413,14 @@ input:checked+.modal-cnopka span {
   }
 
   .ftr-text-social {
-    /* text-align: start; */
+    text-align: start;
   }
 
   .footer-name {
     display: flex;
   }
 
-  .footer-bottom {
-    /* margin-right: 207px;
-    margin-left: 164px; */
-  }
-
+ 
   .footer-input {
     width: 264px;
 
@@ -1450,19 +1441,20 @@ input:checked+.modal-cnopka span {
   .cust-container {
     width: 584px;
   }
+
+   .header-container{
+  width: 769px;
+}
+
 }
 
 @media screen (max-width 1157px) {
- 
-
   .what-container {
     display: none;
   }
 }
 
 @media screen and (max-width: 1157px) {
-
- 
 
   .what {
     display: none;
@@ -1480,10 +1472,6 @@ input:checked+.modal-cnopka span {
   }
 
   /* хедер */
-
-  /* .hero-container{
-    padding: 188px 0;
-  } */
 
   .nav-menu-list {
     display: flex;
