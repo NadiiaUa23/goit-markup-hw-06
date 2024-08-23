@@ -96,7 +96,7 @@ header {
 .nav-menu {
   display: flex;
   align-items: center;
-  
+
 }
 
 .logo {
@@ -262,12 +262,12 @@ header {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  
+
 }
 
 .mob-social-list {
   display: flex;
- 
+
   gap: 40px;
   margin-top: auto;
 }
@@ -302,6 +302,7 @@ header {
   background-color: #404bbf;
   border: transparent;
 }
+
 .current {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -405,9 +406,7 @@ header {
   justify-content: center;
 }
 
-.feature-item {
- 
-}
+.feature-item {}
 
 .feature-cub {
   display: none;
@@ -488,9 +487,9 @@ header {
 }
 
 
-  .team-item:not(:last-child) {
-    margin-bottom: 72px;
-  }
+.team-item:not(:last-child) {
+  margin-bottom: 72px;
+}
 
 
 .team-item {
@@ -662,14 +661,14 @@ header {
 
 .ftr-text-social {
 
- font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white, #fff);
   margin-bottom: 16px;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- 
+
 }
 
 .ftr-icon-list {
@@ -800,9 +799,9 @@ header {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-button-all:hover,
-.nav-button-all:focus {
-  color: #ffffff;
+.nav-button-all.link:hover,
+.nav-button-all.link:focus {
+  color: #f4eded;
   background-color: #404bbf;
   cursor: pointer;
   border: 1px solid transparent;
@@ -911,7 +910,7 @@ header {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: scroll;
+  overflow: scroll;
 }
 
 .is-hidden {
@@ -1171,28 +1170,29 @@ input:checked+.modal-cnopka span {
     width: 428px;
   }
 
-  
+
   .nav-button {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  
+
 }
- /* Here go the mobile phone CSS */
-@media screen and (max-width: 767px) { 
+
+/* Here go the mobile phone CSS */
+@media screen and (max-width: 767px) {
   .nav-menu {
     padding: 24px 16px;
   }
-    
 
-    .hero-container {
-      padding: 112px 0;
-     }
-   
-   .team        {
+
+  .hero-container {
+    padding: 112px 0;
+  }
+
+  .team {
     width: 264px;
     margin: auto;
-}
+  }
 
   .feature-subtitle {
     text-align: center;
@@ -1202,43 +1202,44 @@ input:checked+.modal-cnopka span {
     margin-bottom: 72px;
   }
 
-  .logopftr{
+  .logopftr {
     width: 100%;
   }
 
-  .ftr-icon{
+  .ftr-icon {
     width: 100%;
   }
-  .footer-bottom{
+
+  .footer-bottom {
     width: 100%;
     margin-top: 72px;
   }
 
-  .ftr-icon-list{
+  .ftr-icon-list {
     justify-content: center;
   }
 
-  .footer-name{
+  .footer-name {
     justify-content: center;
   }
 
-  .footer-form{
+  .footer-form {
     justify-content: center;
   }
 
-  .footer-form-email{
+  .footer-form-email {
     width: 100%;
   }
 
-  .footer-form-btn{
+  .footer-form-btn {
     margin-top: 16px;
   }
 
-  .ftr-text{
+  .ftr-text {
     width: 100%;
     text-align: justify;
   }
-  
+
 }
 
 
@@ -1261,7 +1262,7 @@ input:checked+.modal-cnopka span {
     padding: 0;
   }
 
- /* хедер * */
+  /* хедер * */
   .nav-menu-list {
     display: flex;
     gap: 40px;
@@ -1326,7 +1327,7 @@ input:checked+.modal-cnopka span {
 
 
   .hero-section {
-  padding: 118px 0;
+    padding: 118px 0;
     flex-shrink: 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -1395,7 +1396,7 @@ input:checked+.modal-cnopka span {
   .ftr-container {
     align-items: initial;
   }
-   
+
   .inf-media {
     display: flex;
     flex-wrap: wrap;
@@ -1420,7 +1421,7 @@ input:checked+.modal-cnopka span {
     display: flex;
   }
 
- 
+
   .footer-input {
     width: 264px;
 
@@ -1442,9 +1443,9 @@ input:checked+.modal-cnopka span {
     width: 584px;
   }
 
-   .header-container{
-  width: 769px;
-}
+  .header-container {
+    width: 769px;
+  }
 
 }
 
@@ -1627,9 +1628,9 @@ input:checked+.modal-cnopka span {
 
   .ftr-container {
     margin: 0 auto;
-   
+
     display: flex;
-   
+
   }
 
   .logopftr {
@@ -1638,7 +1639,7 @@ input:checked+.modal-cnopka span {
 
   .ftr-text {
     display: flex;
-    
+
   }
 
   .footer-bottom {
@@ -1662,7 +1663,7 @@ input:checked+.modal-cnopka span {
   .inf-media {
     display: flex;
     flex-wrap: nowrap;
-    
+
   }
 
 }
